@@ -1,0 +1,12 @@
+telewizor 10.0 3300
+kubek 0.5 20
+laptop 2.2 4000
+monitor 4.5 1500
+tablet 0.5 900
+pralka 35.0 2200
+aparat 1.2 3500
+czajnik 1.5 130
+bombka	3.0 450
+choinka			15.0 150
+cygaro 0.5 750
+deska 1 8000

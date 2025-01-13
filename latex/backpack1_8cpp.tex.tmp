@@ -1,0 +1,19 @@
+\doxysection{backpack1.\+cpp File Reference}
+\hypertarget{backpack1_8cpp}{}\label{backpack1_8cpp}\index{backpack1.cpp@{backpack1.cpp}}
+{\ttfamily \#include "{}functions.\+h"{}}\newline
+Include dependency graph for backpack1.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{backpack1_8cpp_a9428236a75bf57bfda76d4a835cddddd}{main}} (int n, char \texorpdfstring{$\ast$}{*}params\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{backpack1_8cpp_a9428236a75bf57bfda76d4a835cddddd}\index{backpack1.cpp@{backpack1.cpp}!main@{main}}
+\index{main@{main}!backpack1.cpp@{backpack1.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{backpack1_8cpp_a9428236a75bf57bfda76d4a835cddddd} 
+int main (\begin{DoxyParamCaption}\item[{int}]{n}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{params}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
