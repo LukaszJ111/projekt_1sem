@@ -1,0 +1,45 @@
+\doxysection{io.\+cpp File Reference}
+\hypertarget{io_8cpp}{}\label{io_8cpp}\index{io.cpp@{io.cpp}}
+{\ttfamily \#include "{}io.\+h"{}}\newline
+{\ttfamily \#include "{}algorithm.\+h"{}}\newline
+Include dependency graph for io.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_items}{Items}} $>$ \mbox{\hyperlink{io_8cpp_a2720bd1da6a9265dbf28b9fd85ce822f}{import}} (std\+::string path)
+\item 
+void \mbox{\hyperlink{io_8cpp_aaa53b20b4b46c61c140cd2e880b62ec6}{saving}} (std\+::vector$<$ \mbox{\hyperlink{struct_items}{Items}} $>$ \&items, std\+::vector$<$ \mbox{\hyperlink{struct_generations}{Generations}} $>$ \&generations, std\+::string output)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{io_8cpp_a2720bd1da6a9265dbf28b9fd85ce822f}\index{io.cpp@{io.cpp}!import@{import}}
+\index{import@{import}!io.cpp@{io.cpp}}
+\doxysubsubsection{\texorpdfstring{import()}{import()}}
+{\footnotesize\ttfamily \label{io_8cpp_a2720bd1da6a9265dbf28b9fd85ce822f} 
+std\+::vector$<$ \mbox{\hyperlink{struct_items}{Items}} $>$ import (\begin{DoxyParamCaption}\item[{std\+::string}]{path}{}\end{DoxyParamCaption})}
+
+Funkcja wpisuje do wektora przedmioty z pliku wejściowego 
+\begin{DoxyParams}{Parameters}
+{\em path} & to sciezka pliku wejsciowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector wpisanych przedmiotow 
+\end{DoxyReturn}
+\Hypertarget{io_8cpp_aaa53b20b4b46c61c140cd2e880b62ec6}\index{io.cpp@{io.cpp}!saving@{saving}}
+\index{saving@{saving}!io.cpp@{io.cpp}}
+\doxysubsubsection{\texorpdfstring{saving()}{saving()}}
+{\footnotesize\ttfamily \label{io_8cpp_aaa53b20b4b46c61c140cd2e880b62ec6} 
+void saving (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_items}{Items}} $>$ \&}]{items}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_generations}{Generations}} $>$ \&}]{generations}{, }\item[{std\+::string}]{output}{}\end{DoxyParamCaption})}
+
+Funkcja obsługująca zapis do wskazanego pliku wyjściowego 
+\begin{DoxyParams}{Parameters}
+{\em przedmioty} & to vector wszystkich przedmiotów mogących znaleźć się w plecaku \\
+\hline
+{\em pokolenia} & vector wszystkich pokoleń \\
+\hline
+{\em wyjscie} & scieżka pliku wyjściowego \\
+\hline
+\end{DoxyParams}

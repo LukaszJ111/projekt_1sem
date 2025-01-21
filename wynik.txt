@@ -1,0 +1,125 @@
+pokolenie 0,  waga: 25.5, wartosc: 3470
+telewizor waga: 10 wartosc: 3300
+kubek waga: 0.5 wartosc: 20
+laptop waga: 2.2 wartosc: 4000
+monitor waga: 4.5 wartosc: 1500
+tablet waga: 0.5 wartosc: 900
+pralka waga: 35 wartosc: 2200
+aparat waga: 1.2 wartosc: 3500
+czajnik waga: 1.5 wartosc: 130
+bombka waga: 3 wartosc: 450
+choinka waga: 15 wartosc: 150
+cygaro waga: 0.5 wartosc: 750
+deska waga: 1 wartosc: 8000
+
+pokolenie 1,  waga: 10.7, wartosc: 14370
+telewizor waga: 10 wartosc: 3300
+kubek waga: 0.5 wartosc: 20
+laptop waga: 2.2 wartosc: 4000
+monitor waga: 4.5 wartosc: 1500
+tablet waga: 0.5 wartosc: 900
+pralka waga: 35 wartosc: 2200
+aparat waga: 1.2 wartosc: 3500
+czajnik waga: 1.5 wartosc: 130
+bombka waga: 3 wartosc: 450
+choinka waga: 15 wartosc: 150
+cygaro waga: 0.5 wartosc: 750
+deska waga: 1 wartosc: 8000
+
+pokolenie 2,  waga: 9.9, wartosc: 17730
+telewizor waga: 10 wartosc: 3300
+kubek waga: 0.5 wartosc: 20
+laptop waga: 2.2 wartosc: 4000
+monitor waga: 4.5 wartosc: 1500
+tablet waga: 0.5 wartosc: 900
+pralka waga: 35 wartosc: 2200
+aparat waga: 1.2 wartosc: 3500
+czajnik waga: 1.5 wartosc: 130
+bombka waga: 3 wartosc: 450
+choinka waga: 15 wartosc: 150
+cygaro waga: 0.5 wartosc: 750
+deska waga: 1 wartosc: 8000
+
+pokolenie 3,  waga: 9.9, wartosc: 17730
+telewizor waga: 10 wartosc: 3300
+kubek waga: 0.5 wartosc: 20
+laptop waga: 2.2 wartosc: 4000
+monitor waga: 4.5 wartosc: 1500
+tablet waga: 0.5 wartosc: 900
+pralka waga: 35 wartosc: 2200
+aparat waga: 1.2 wartosc: 3500
+czajnik waga: 1.5 wartosc: 130
+bombka waga: 3 wartosc: 450
+choinka waga: 15 wartosc: 150
+cygaro waga: 0.5 wartosc: 750
+deska waga: 1 wartosc: 8000
+
+pokolenie 4,  waga: 10.4, wartosc: 17750
+telewizor waga: 10 wartosc: 3300
+kubek waga: 0.5 wartosc: 20
+laptop waga: 2.2 wartosc: 4000
+monitor waga: 4.5 wartosc: 1500
+tablet waga: 0.5 wartosc: 900
+pralka waga: 35 wartosc: 2200
+aparat waga: 1.2 wartosc: 3500
+czajnik waga: 1.5 wartosc: 130
+bombka waga: 3 wartosc: 450
+choinka waga: 15 wartosc: 150
+cygaro waga: 0.5 wartosc: 750
+deska waga: 1 wartosc: 8000
+
+pokolenie 5,  waga: 10.4, wartosc: 17750
+telewizor waga: 10 wartosc: 3300
+kubek waga: 0.5 wartosc: 20
+laptop waga: 2.2 wartosc: 4000
+monitor waga: 4.5 wartosc: 1500
+tablet waga: 0.5 wartosc: 900
+pralka waga: 35 wartosc: 2200
+aparat waga: 1.2 wartosc: 3500
+czajnik waga: 1.5 wartosc: 130
+bombka waga: 3 wartosc: 450
+choinka waga: 15 wartosc: 150
+cygaro waga: 0.5 wartosc: 750
+deska waga: 1 wartosc: 8000
+
+pokolenie 6,  waga: 10.4, wartosc: 17750
+telewizor waga: 10 wartosc: 3300
+kubek waga: 0.5 wartosc: 20
+laptop waga: 2.2 wartosc: 4000
+monitor waga: 4.5 wartosc: 1500
+tablet waga: 0.5 wartosc: 900
+pralka waga: 35 wartosc: 2200
+aparat waga: 1.2 wartosc: 3500
+czajnik waga: 1.5 wartosc: 130
+bombka waga: 3 wartosc: 450
+choinka waga: 15 wartosc: 150
+cygaro waga: 0.5 wartosc: 750
+deska waga: 1 wartosc: 8000
+
+pokolenie 7, 
+w poprzednim pokoleniu znaleziono juz optymalne rozwiazanie
+
+pokolenie 8, 
+w poprzednim pokoleniu znaleziono juz optymalne rozwiazanie
+
+pokolenie 9, 
+w poprzednim pokoleniu znaleziono juz optymalne rozwiazanie
+
+pokolenie 10, 
+w poprzednim pokoleniu znaleziono juz optymalne rozwiazanie
+
+pokolenie 11, 
+w poprzednim pokoleniu znaleziono juz optymalne rozwiazanie
+
+pokolenie 12, 
+w poprzednim pokoleniu znaleziono juz optymalne rozwiazanie
+
+pokolenie 13, 
+w poprzednim pokoleniu znaleziono juz optymalne rozwiazanie
+
+pokolenie 14, 
+w poprzednim pokoleniu znaleziono juz optymalne rozwiazanie
+
+pokolenie 15, 
+w poprzednim pokoleniu znaleziono juz optymalne rozwiazanie
+

@@ -1,0 +1,130 @@
+\doxysection{algorithm.\+cpp File Reference}
+\hypertarget{algorithm_8cpp}{}\label{algorithm_8cpp}\index{algorithm.cpp@{algorithm.cpp}}
+{\ttfamily \#include "{}algorithm.\+h"{}}\newline
+Include dependency graph for algorithm.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{algorithm_8cpp_ae7f210e07afa7ba18f413ab0c8bb522d}{items\+\_\+printing}} (std\+::vector$<$ \mbox{\hyperlink{struct_items}{Items}} $>$ \&items)
+\item 
+std\+::vector$<$ bool $>$ \mbox{\hyperlink{algorithm_8cpp_a1859c663e2fc9f5508cdaffc39120b2d}{random\+\_\+genome}} (int n)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ \mbox{\hyperlink{algorithm_8cpp_a68bb7f33a56cc5398c7df110c74d4c09}{subject\+\_\+creation}} (int n, int length)
+\item 
+void \mbox{\hyperlink{algorithm_8cpp_a728027f3b61e02089d50f1cb86b5bb78}{subjects\+\_\+printing}} (std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ \&subjects)
+\item 
+void \mbox{\hyperlink{algorithm_8cpp_aa33c05dc52cfe0e175c42d57f6126d14}{fitness}} (std\+::vector$<$ \mbox{\hyperlink{struct_items}{Items}} $>$ \&items, std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ \&subjects, double capacity)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ \mbox{\hyperlink{algorithm_8cpp_a07ad76cf06da72e93561504d44d4a9da}{sort\+\_\+generations}} (std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ subjects)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ \mbox{\hyperlink{algorithm_8cpp_a5d3725b6345bb4c1fba2b5a1a93b0d29}{crossover}} (std\+::vector$<$ \mbox{\hyperlink{struct_items}{Items}} $>$ \&items, std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ \&subjects, double capacity, int num\+\_\+in\+\_\+generation)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{algorithm_8cpp_a5d3725b6345bb4c1fba2b5a1a93b0d29}\index{algorithm.cpp@{algorithm.cpp}!crossover@{crossover}}
+\index{crossover@{crossover}!algorithm.cpp@{algorithm.cpp}}
+\doxysubsubsection{\texorpdfstring{crossover()}{crossover()}}
+{\footnotesize\ttfamily \label{algorithm_8cpp_a5d3725b6345bb4c1fba2b5a1a93b0d29} 
+std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ crossover (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_items}{Items}} $>$ \&}]{items}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ \&}]{subjects}{, }\item[{double}]{capacity}{, }\item[{int}]{num\+\_\+in\+\_\+generation}{}\end{DoxyParamCaption})}
+
+Funkcja dokonuje krzyżowania osobników na podstawie stosunku wartosc/waga elitaryzm -\/ przepisujemy 20\% najlepszych osobników z poprzedniego pokolenia wybieramy 50\% najlepszych osobnikow z kazdego pokolenia jako rodzice następnego, krzyżujemy rodziców każdy z każdym "{}suma"{} genomu rodziców i sprawdzanie od indeksu przedmiotu o najwiekszym stosunku wartosc/waga (vals\+\_\+poz\+\_\+sort) sprawdzanie i odrzucanie jezeli waga\texorpdfstring{$>$}{>}ladownosc 
+\begin{DoxyParams}{Parameters}
+{\em items} & to vector wszystkich przedmiotów mogących znaleźć się w plecaku \\
+\hline
+{\em subjects} & vector osobników z których część będziemy ze sobą krzyżować \\
+\hline
+{\em capacity} & zakładana maksymalna ladowność naszego plecaka \\
+\hline
+{\em num\+\_\+in\+\_\+generation} & zakładana maksymalna liczba osobników w pokoleniu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector skrzyżowanych osobników 
+\end{DoxyReturn}
+\Hypertarget{algorithm_8cpp_aa33c05dc52cfe0e175c42d57f6126d14}\index{algorithm.cpp@{algorithm.cpp}!fitness@{fitness}}
+\index{fitness@{fitness}!algorithm.cpp@{algorithm.cpp}}
+\doxysubsubsection{\texorpdfstring{fitness()}{fitness()}}
+{\footnotesize\ttfamily \label{algorithm_8cpp_aa33c05dc52cfe0e175c42d57f6126d14} 
+void fitness (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_items}{Items}} $>$ \&}]{items}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ \&}]{subject}{, }\item[{double}]{capacity}{}\end{DoxyParamCaption})}
+
+Funkcja obliczająca ocenę dla każdego osobnika na podstawie jego ladownosci naszego plecaka, jego wagi i wartosci przedmiotow funkcja oblicza ocene za pomocą wzoru\+: penalty=capicity/100; bonus=5; jeżeli waga przekroczy ładowność\+: (weight\texorpdfstring{$>$}{>}capacity) fitness=(value+bonus\texorpdfstring{$\ast$}{*}(value/weight))\texorpdfstring{$\ast$}{*}penalty\texorpdfstring{$\ast$}{*}(capacity/weight); else fitness=value+bonus\texorpdfstring{$\ast$}{*}(value/weight); w przeciwnym przypadku\+: fitness=value+bonus\texorpdfstring{$\ast$}{*}(value/weight);
+
+gdzie\+: weight-\/ całkowita (zsumowana) waga przedmiotów w plecaku dla danego osobnika value -\/całkowita (zsumowana) wartość przedmiotów w plecaku dla danego osobnika
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & to vector wszystkich przedmiotów mogących znaleźć się w plecaku \\
+\hline
+{\em subject} & vector osobników którym zostanie przypisana ocena (przekazywany przez referencję czyli ocena zostanie ustawiona dla osobnikow w tym vectorze) \\
+\hline
+{\em capacity} & to maksymalna ladownosc naszego plecaka \\
+\hline
+\end{DoxyParams}
+\Hypertarget{algorithm_8cpp_ae7f210e07afa7ba18f413ab0c8bb522d}\index{algorithm.cpp@{algorithm.cpp}!items\_printing@{items\_printing}}
+\index{items\_printing@{items\_printing}!algorithm.cpp@{algorithm.cpp}}
+\doxysubsubsection{\texorpdfstring{items\_printing()}{items\_printing()}}
+{\footnotesize\ttfamily \label{algorithm_8cpp_ae7f210e07afa7ba18f413ab0c8bb522d} 
+void items\+\_\+printing (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_items}{Items}} $>$ \&}]{items}{}\end{DoxyParamCaption})}
+
+Funkcja wypisuje przedmioty z wektora ktore byly wczesniej wpisane z pliku 
+\begin{DoxyParams}{Parameters}
+{\em items} & to wektor przedmiotów które zostaną wypisane \\
+\hline
+\end{DoxyParams}
+\Hypertarget{algorithm_8cpp_a1859c663e2fc9f5508cdaffc39120b2d}\index{algorithm.cpp@{algorithm.cpp}!random\_genome@{random\_genome}}
+\index{random\_genome@{random\_genome}!algorithm.cpp@{algorithm.cpp}}
+\doxysubsubsection{\texorpdfstring{random\_genome()}{random\_genome()}}
+{\footnotesize\ttfamily \label{algorithm_8cpp_a1859c663e2fc9f5508cdaffc39120b2d} 
+std\+::vector$<$ bool $>$ random\+\_\+genome (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+Funkcja losowo tworzy genom (w algorytmach genetycznych nazywanu również czasami chromosomem) osobnika o podanej dlugosci 
+\begin{DoxyParams}{Parameters}
+{\em n} & dlugosc genomu (liczba przedmiotow które mogą znaleźć się w plecaku) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+losowy genom w vector$<$bool$>$ 
+\end{DoxyReturn}
+\Hypertarget{algorithm_8cpp_a07ad76cf06da72e93561504d44d4a9da}\index{algorithm.cpp@{algorithm.cpp}!sort\_generations@{sort\_generations}}
+\index{sort\_generations@{sort\_generations}!algorithm.cpp@{algorithm.cpp}}
+\doxysubsubsection{\texorpdfstring{sort\_generations()}{sort\_generations()}}
+{\footnotesize\ttfamily \label{algorithm_8cpp_a07ad76cf06da72e93561504d44d4a9da} 
+std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ sort\+\_\+generations (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$}]{subjects}{}\end{DoxyParamCaption})}
+
+Funkcja sortuje osobnikow w pokoleniu malejąco po ich ocenie 
+\begin{DoxyParams}{Parameters}
+{\em subjects} & vector osobników do posortowania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+posortowany vector$<$\+Osobniki$>$ aby nie zmieniać wartości pierwotnego przekazywanego przez parametr 
+\end{DoxyReturn}
+\Hypertarget{algorithm_8cpp_a68bb7f33a56cc5398c7df110c74d4c09}\index{algorithm.cpp@{algorithm.cpp}!subject\_creation@{subject\_creation}}
+\index{subject\_creation@{subject\_creation}!algorithm.cpp@{algorithm.cpp}}
+\doxysubsubsection{\texorpdfstring{subject\_creation()}{subject\_creation()}}
+{\footnotesize\ttfamily \label{algorithm_8cpp_a68bb7f33a56cc5398c7df110c74d4c09} 
+std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ subject\+\_\+creation (\begin{DoxyParamCaption}\item[{int}]{n}{, }\item[{int}]{length}{}\end{DoxyParamCaption})}
+
+Tworzy okreslona liczbe osobnikow z losowym genomem o podanej dlugosci 
+\begin{DoxyParams}{Parameters}
+{\em n} & liczba osobnikow ktore ma stworzyc funkcja \\
+\hline
+{\em length} & dlugosc genomu (liczba przedmiotow które mogą znaleźć się w plecaku) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca vektor osobnikow 
+\end{DoxyReturn}
+\Hypertarget{algorithm_8cpp_a728027f3b61e02089d50f1cb86b5bb78}\index{algorithm.cpp@{algorithm.cpp}!subjects\_printing@{subjects\_printing}}
+\index{subjects\_printing@{subjects\_printing}!algorithm.cpp@{algorithm.cpp}}
+\doxysubsubsection{\texorpdfstring{subjects\_printing()}{subjects\_printing()}}
+{\footnotesize\ttfamily \label{algorithm_8cpp_a728027f3b61e02089d50f1cb86b5bb78} 
+void subjects\+\_\+printing (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_subjects}{Subjects}} $>$ \&}]{subjects}{}\end{DoxyParamCaption})}
+
+Funkcja wyswietla vector osobnikow 
+\begin{DoxyParams}{Parameters}
+{\em subjects} & vector osobnikow do wyswietlenia \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,46 @@
+\doxysection{cli.\+h File Reference}
+\hypertarget{cli_8h}{}\label{cli_8h}\index{cli.h@{cli.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for cli.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{cli_8h_a97ee70a8770dc30d06c744b24eb2fcfc}{help}} ()
+\item 
+bool \mbox{\hyperlink{cli_8h_a71b459ec415ce758823d01ffeca2dc14}{parameters}} (int n, char \texorpdfstring{$\ast$}{*}params\mbox{[}$\,$\mbox{]}, std\+::string \&input, std\+::string \&output, double \&capacity, int \&num\+\_\+in\+\_\+generation, int \&num\+\_\+of\+\_\+generations)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{cli_8h_a97ee70a8770dc30d06c744b24eb2fcfc}\index{cli.h@{cli.h}!help@{help}}
+\index{help@{help}!cli.h@{cli.h}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily \label{cli_8h_a97ee70a8770dc30d06c744b24eb2fcfc} 
+void help (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Wyświetla pomoc odnośnie obsługi uruchomienia programu z linii poleceń \Hypertarget{cli_8h_a71b459ec415ce758823d01ffeca2dc14}\index{cli.h@{cli.h}!parameters@{parameters}}
+\index{parameters@{parameters}!cli.h@{cli.h}}
+\doxysubsubsection{\texorpdfstring{parameters()}{parameters()}}
+{\footnotesize\ttfamily \label{cli_8h_a71b459ec415ce758823d01ffeca2dc14} 
+bool parameters (\begin{DoxyParamCaption}\item[{int}]{n}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{params}{\mbox{[}$\,$\mbox{]}, }\item[{std\+::string \&}]{input}{, }\item[{std\+::string \&}]{output}{, }\item[{double \&}]{capacity}{, }\item[{int \&}]{num\+\_\+in\+\_\+generation}{, }\item[{int \&}]{num\+\_\+of\+\_\+generations}{}\end{DoxyParamCaption})}
+
+Funkcja przekazuje poprzez parametry funkcji przekazuje do zmiennych parametry wywołania programu 
+\begin{DoxyParams}{Parameters}
+{\em n} & liczba parametrow \\
+\hline
+{\em wejscie\+\_\+przedmioty} & ścieżka pliku wejściowego \\
+\hline
+{\em wyjscie\+\_\+wynik} & ścieżka pliku wyjściowego \\
+\hline
+{\em ladownosc} & zakładana maksymalna ładowność plecaka \\
+\hline
+{\em liczba\+\_\+osob\+\_\+pokolenie} & liczba osobników w pokoleniu \\
+\hline
+{\em liczba\+\_\+pokolen} & liczba pokoleń \\
+\hline
+\end{DoxyParams}
