@@ -290,7 +290,7 @@ bool parameters(int n, char * params[],std::string & input,std::string & output,
     for(int i=1;i<n;i++){
         args.push_back(params[i]);
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         if(args[i]=="-i"){
             input=args[i+1];
             i++;
