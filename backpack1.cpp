@@ -76,8 +76,8 @@ int main(int n, char * params[]){
 	
 	/*std::cout<<std::endl;
 	std::cout<<"wyswietlam najlepsze rozwiazanie z kazdego pokolenia"<<std::endl;
-	std::cout<<std::endl;
-	saving(items,generations,output);*/
+	std::cout<<std::endl;*/
+	saving(items,generations,output);
 	
 	
 	return 0;
